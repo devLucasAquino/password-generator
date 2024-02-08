@@ -41,7 +41,6 @@ function gerarSenha(){
     var tamanho = parseInt(document.querySelector('#password-lenght').value);
 
     var resultElement = document.querySelector('#result');
-    resultElement.innerHTML = '';
 
     // Geração de múltiplas senhas
     for (var k =  0; k < quantidade; k++) {
