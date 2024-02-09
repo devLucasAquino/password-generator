@@ -53,11 +53,16 @@ body {
     justify-content: center;
 }
 
-#button-refresh{
+.button{
+    display: block;
     width: 5rem;
     height: 3rem;
     margin-top: 2rem;
-    margin-left: 10rem;
     background-color: rgba(0, 0, 255, 0.4);
+}
+
+#button-refresh{
+    margin-left: 10rem;
+    
 }
 
