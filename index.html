@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>password-generator</title>
-    <link rel="stylesheet" href="./src/styles/style.css">
+    <!-- <link rel="stylesheet" href="./src/styles/style.css"> -->
 </head>
 <body>
     <div id="quadrado1">
 
         <h1 id="title">Gerador de Senhas</h1><br>
 
-        <label id="message-password-lenght">digite a quantidade de caracteres: </label>
-        <input type="text" id="password-lenght"><br>
+        <div id="campos">
 
-        <label id="message-password-number">digite a quantidade de senhas: </label>
-        <input type="text" id="password-number"><br>
+            <label id="message-password-lenght">digite a quantidade de caracteres: </label>
+            <input type="text" id="password-lenght"><br>
+
+            <label id="message-password-number">digite a quantidade de senhas: </label>
+            <input type="text" id="password-number"><br>
+
+        </div>
+
+        <div id="instrucoes">
+
+            <label><input id="upperCase" type="checkbox">Incluir maíusculas</label><br>
+            <label><input id="lowerCase" type="checkbox">Incluir minúsculas</label><br>
+
+        </div>
+        
 
 
         <label id="description">senha gerada: </label><br>
@@ -24,9 +36,12 @@
         <label id="result"></label><br>
 
 
-        <button id="button-refresh" type="button" onclick="gerarSenha()">
-            <img src="./src/img/svg/iconmonstr-refresh-1.svg" alt="imagem do botão">
+        <button class="button" id="button-refresh" type="button" onclick="gerarSenha()">
+            generate
+            <!-- <img src="./src/img/svg/iconmonstr-refresh-1.svg" alt="imagem do botão"> -->
         </button>
+
+        <button class="button" id="clear" type="button" onclick="clearPassword()">clear</button>
 
         <script src="./logicaGerador.js"></script>  
         
