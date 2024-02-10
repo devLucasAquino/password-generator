@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>password-generator</title>
-    <!-- <link rel="stylesheet" href="./src/styles/style.css"> -->
+    <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
     <div id="quadrado1">
@@ -23,29 +23,26 @@
 
         <div id="instrucoes">
 
-            <label><input id="upperCase" type="checkbox">Incluir maíusculas</label><br>
-            <label><input id="lowerCase" type="checkbox">Incluir minúsculas</label><br>
-
+            <label id="label-checkbox"><input id="upperCase" type="checkbox">Incluir maíusculas</label>
+            <label id="label-checkbox"><input id="lowerCase" type="checkbox">Incluir minúsculas</label><br>
+            
         </div>
         
+        <div id="select-button">
+            <button class="button" id="generate" type="button" onclick="gerarSenha()">generate</button>
 
-
+            <button class="button" id="clear" type="button" onclick="clearPassword()">clear</button>
+        </div>
+        
         <label id="description">senha gerada: </label><br>
 
 
         <label id="result"></label><br>
 
 
-        <button class="button" id="button-refresh" type="button" onclick="gerarSenha()">
-            generate
-            <!-- <img src="./src/img/svg/iconmonstr-refresh-1.svg" alt="imagem do botão"> -->
-        </button>
-
-        <button class="button" id="clear" type="button" onclick="clearPassword()">clear</button>
 
         <script src="./logicaGerador.js"></script>  
         
-        </textarea>
     </div>
 </body>
 </html>
