@@ -7,14 +7,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100vh; /* 100% da altura da viewport */
+    height: 100vh; /* 100% da altura da viewport
     margin: 0;     /* Remover margens padrão do body */
     background-color: #fff;
 }
 
 #quadrado1 {
     width: 30rem;   /* Largura desejada da div */
-    height: 30rem;  /* Altura desejada da div */
+    height: auto;  /* Altura desejada da div */
     background-color: rgba(123, 123, 123, 0.3);
     border-radius: 10px;
 }
@@ -27,42 +27,67 @@ body {
 
 #message-password-lenght, #message-password-number{
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-left: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #password-lenght, #password-number{
     width: 3.5rem;
-    border: none;
     border-radius: 2px;
+    border: none;
+    outline: solid 0.1rem rgba(0, 0, 255, 0.4);
 }
 
 #password-number{
     margin-bottom: 2rem;
 }
 
+#upperCase, #lowerCase{
+    margin-left: 2rem;
+    width: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#label-checkbox{
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
 #description{
     font-size: 1.4rem;
     margin-left: 5rem;
+    margin-bottom: 2.5rem;
     font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #result{
+    padding-left: 4rem;
     font-size: 1.4rem;
-    margin-left: 6rem;
-    justify-content: center;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
 }
 
-.button{
-    display: block;
+
+.button{    
     width: 5rem;
     height: 3rem;
     margin-top: 2rem;
     background-color: rgba(0, 0, 255, 0.4);
+    border: none;
+    outline: solid 0.15rem rgba(0, 0, 0, 0.9);
+    margin-bottom: 1.5rem;
 }
 
-#button-refresh{
-    margin-left: 10rem;
-    
+#generate{
+    margin-left: 9rem;
+}
+
+#clear{
+    margin-left: 0.5rem;
 }
 
